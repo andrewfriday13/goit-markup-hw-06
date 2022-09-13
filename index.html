@@ -28,15 +28,16 @@
         </nav>
         <ul class="list-address">
           <li class="list-item">
-            <a class="icon-contacts" href="mailto:info@devstudio.com" ">
-                        <svg class=" icon-tap"width="16" height="12" href="mailto:info@devstudio.com">
+            <a class="icon-contacts" href="mailto:info@devstudio.com">
+              <svg class=" icon-tap" width="16" height="12" >
               <use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com
             </a>
           </li>
           <li class="list-item">
-            <a class="icon-contacts" href="tel:+380961111111"><svg class="icon-tap" width="10" height="16"
-                href="mailto:info@devstudio.com">
-                <use href="./images/icons.svg#smartphone"></use>
+            <a class="icon-contacts" href="tel:+380961111111">
+                <svg class="icon-tap" width="10" height="16">
+                <use href="./images/icons.svg#smartphone">
+                </use>
               </svg>+38 096 111 11 11</a>
           </li>
         </ul>
@@ -47,18 +48,69 @@
       <section class="hero section" >
         <div class="container">
           <h1 class="hero-cap">Ефективні рішення для вашого бізнесу</h1>
-          <button class="buttom-cap" type="buttom" data-modal-open >Замовити послугу</button>
+          <button class="buttom-cap" type="button" data-modal-open >Замовити послугу</button>
         </div> 
-        <!-- модальне вікно-->
-        <div class="backdrop is-hidden" data-modal>
+        <!-- модальне вікно  is-hidden-->
+        <div class="backdrop " data-modal>
           <div class="modal ">
             <button class="modal-btn" type="button" data-modal-close>
               <svg width="11" height="11">
-                <use href="./images/icons.svg#icon-x "></use>
+                <use href="./images/icons.svg#icon-x "></use> 
               </svg>
             </button>
+            <form class="reg-form" name="reg-form" autocomplete="off" novalidate>
+             <strong class="strong-title">Залиште свої дані, ми вам передзвонимо</strong>
+
+              <div class="label-contacts">
+                <div class="form-contacts">
+                  <label for="name">
+                    <strong class="strong-list">Iмʼя</strong>
+                  </label>
+                </div>
+                <input class="input" type="text" id="name" name="user-name" required >
+              </div>
+
+              <div class="label-contacts">
+                <div class="form-contacts">
+                  <label for="tel">
+                    <strong class="strong-list">Телефон</strong>
+                  </label>
+                </div>
+                <input class="input" type="tel" id="tel" name="user-tel" >
+              </div>
+
+              <div class="label-contacts">
+                <div class="form-contacts">
+                  <label for="email">
+                    <strong class="strong-list">Пошта</strong>
+                  </label>
+                </div>
+                <input  class="input" type="email" id="email" name="user-email" >
+              </div>
+
+              <div class="label-contacts">
+                <div class="form-contacts">
+                  <label for="comment">
+                    <strong class="strong-list">Коментар</strong>
+                  </label>
+                </div>
+                <textarea  name="comment " id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+              </div>
+
+              <div>
+                <input class="aggre" type="checkbox" name="licence" >
+                 <strong class="strong-licence">
+                   Погоджуюся з розсилкою та приймаю
+                   <a class="link" href="" rel="_blank" >Умови договору</a>
+                 </strong>
+              </div>
+
+              <div>
+                <button class="modal-btn" type="submit">Відправити</button>
+              </div>     
+
+            </form>
           </div>
-        
         </div> 
       </section>
       <!-- вміння skill-->
@@ -383,10 +435,10 @@
             </li>
           </ul>
           </div>
-           <div>
         </address>
       </div>
-      <div><h2>приєднуйтесь</h2>
+      <div>
+       <h2>приєднуйтесь</h2>
       <div class="socaial-footer">
         <ul class="social-footer">
           <li class="social-item">
@@ -427,7 +479,29 @@
         </ul>
       </div>
     </div>
-  </div>
+    <div>
+      <h2>Підпишіться на розсилку</h2>
+      <form name="form" autocomplete="on" novalidate>
+        <div class="add-email">
+          <div>
+            <label>
+              <input type="email" name="email" />
+            </label>
+          </div>
+          <div>
+            <button class="tg-btn" type="submit">Підписатися
+              <svg class="" width="24" height="24">
+                <use href="./images/icons.svg#telegram-icon">
+                </use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
+    
+    </div>
+        </div>
+      </div>
  </footer>
  <script src="./js/modal.js"></script>
 </body>
