@@ -62,78 +62,54 @@
              <strong class="strong-title">Залиште свої дані, ми вам передзвонимо</strong>
 
               <div class="label-contacts">
-                <div class="form-contacts">
-                  <label for="name">
+                  
                     <strong class="strong-list">Iмʼя</strong>
-                  </label>                  
-                </div>
-                <div class="stoke">
                   <input class="input" type="text" id="name" name="user-name" required >
                   <svg class="form-icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-name">
                     </use>
                   </svg>
-                </div>
               </div>
 
               <div class="label-contacts">
-                <div class="form-contacts">
-                  <label for="tel">
                     <strong class="strong-list">Телефон</strong>
-                  </label>
-                </div>
-                <div class="label-contacts">
-                  <div class="form-contacts">
-                    <label for="name">
-                    </label>
-                  </div>
-                  <div class="stoke">
+                
                     <input class="input" type="tel" id="tel" name="user-tel" required>
                     <svg class="form-icon" width="18" height="18">
                       <use href="./images/icons.svg#icon-phone">
                       </use>
                     </svg>
-                  </div>
-                </div>
               </div>
 
               <div class="label-contacts">
-                <div class="form-contacts">
-                  <label for="email">
                     <strong class="strong-list">Пошта</strong>
-                  </label>
-                </div>
-                <div class="label-contacts">
                   <div class="form-contacts">
                     <label for="name">
                     </label>
                   </div>
-                  <div class="stoke">
                     <input class="input" type="email" id="email" name="user-email" required>
                     <svg class="form-icon" width="18" height="18">
                       <use href="./images/icons.svg#icon-mail">
                       </use>
                     </svg>
-                  </div>
-                </div>
               </div>
 
               <div class="label-contacts">
-                <div class="form-contacts">
-                  <label for="comment">
                     <strong class="strong-list">Коментар</strong>
-                  </label>
-                </div>
-                <textarea  name="comment " id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+                <textarea  class="textarea" name="comment " id="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
               </div>
 
-              <div>
-                <input class="aggre" type="checkbox" name="licence" >
-                 <strong class="strong-licence">
-                   Погоджуюся з розсилкою та приймаю
-                   <a class="link" href="" rel="_blank" >Умови договору</a>
-                 </strong>
-              </div>
+               <label>
+                  <input class="visually-hidden " type="checkbox" name="licence" >
+                  <svg width="16" height="15">
+                    <use class="icon-uncheked" href="./images/icons.svg#icon-uncheked"></use>
+                    <use class="icon-cheked" href="./images/icons.svg#icon-cheked"></use>
+                  </svg>
+                  <strong class="strong-licence">
+                    Погоджуюся з розсилкою та приймаю  
+                    <a class="link" href="" rel="_blank" >Умови договору</a>
+                  </strong>
+                </label>
 
               <div>
                 <button class="modal-btn" type="submit">Відправити</button>
