@@ -798,3 +798,13 @@ fill: var(--active-but);
   justify-content: center;
   gap: 9px;
 }
+[for="footer-email"]{
+  display: inline-block;
+  font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
