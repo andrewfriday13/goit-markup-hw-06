@@ -695,6 +695,7 @@ border: 1px solid var(--color-but);
   margin-bottom: 12px;
 }
 .footer-label{
+  cursor: pointer;
   outline: transparent;
   width: 358px;
   height: 50px;
@@ -702,8 +703,13 @@ border: 1px solid var(--color-but);
   background-color: #2F303A;
   color: var(--background);
   border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color 250ms var(--timing-function);
+}
+.footer-label:hover,
+.footer-label:focus {
+  border: 1px solid var(--color-but);
 }
 .modal-btn{
   margin-top: 30px;
@@ -759,13 +765,36 @@ border: 1px solid var(--color-but);
   position: relative;
   margin-bottom: 10px;
 }
+
 .icon-uncheked{
-  fill: var(--active-but);
+opacity: 1;
 }
-.icon-cheked{
-  fill: var(--text);
+
+.icon-cheked{ 
+  opacity: 0;
+  transition: opacity 250ms var(--timing-function);
+fill: var(--color-but);
+}
+.aggre-licence:checked + 
+ .icon-licence .icon-cheked  {
+  background-color: var(--active-but);
+  opacity:  1 ;
+}
+
+.aggre-licence:checked+
+.icon-licence .icon-uncheked {
+fill: var(--active-but);
+}
+.icon-licence:checked .icon-uncheked{
+  background-color: var(--active-but);
 }
 .form-icon:focus,
 .form-icon:hover{
   border-color: var(--input-border);
 } 
+.licence{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
