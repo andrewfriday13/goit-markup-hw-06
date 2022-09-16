@@ -537,7 +537,6 @@ visibility: hidden ;
   top: 50%;
   left: 50%;
   width:  528px; 
-  height: 581px;
   transform: translate(-50%, -50%) ;
   transition-property: opacity, visibility;
   background-color: var(--background);
@@ -707,7 +706,7 @@ border: 1px solid var(--color-but);
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function);
 }
-.footer-label:hover,
+
 .footer-label:focus {
   border: 1px solid var(--color-but);
 }
