@@ -773,7 +773,7 @@ opacity: 1;
 fill: var(--color-but);
 }
 .aggre-licence:checked + 
- .icon-licence .icon-checked  {
+ .icon-item .icon-checked  {
   background-color: var(--active-but);
   opacity:  1 ;
 }
@@ -782,10 +782,10 @@ fill: var(--color-but);
   fill: var(--color-but);
 }
 .aggre-licence:checked+
-.icon-licence .icon-unchecked {
+.icon-item .icon-unchecked {
 fill: var(--active-but);
 }
-.icon-licence:checked .icon-unchecked{
+.icon-item:checked .icon-unchecked{
   background-color: var(--active-but);
 }
 .icon-item:focus{
