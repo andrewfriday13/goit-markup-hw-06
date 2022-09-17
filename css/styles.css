@@ -788,6 +788,14 @@ fill: var(--active-but);
 .icon-licence:checked .icon-unchecked{
   background-color: var(--active-but);
 }
+.icon-item:focus{
+  fill: var(--active-but);
+}
+.icon-item{
+  width: 16px;
+  height: 15px;
+  outline: transparent;
+}
 .form-icon:focus,
 .form-icon:hover{
   border-color: var(--input-border);
