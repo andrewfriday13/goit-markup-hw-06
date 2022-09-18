@@ -655,8 +655,7 @@ border: 1px solid var(--color-but);}
   margin-bottom: 10px;
 }
 .label-contacts:last-child{
-  padding-bottom: 20px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 .input{
   position: relative;
