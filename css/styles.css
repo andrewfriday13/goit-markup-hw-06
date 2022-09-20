@@ -773,7 +773,7 @@ opacity: 1;
 fill: var(--color-but);
 }
 .aggre-licence:checked + 
- .icon-item .icon-checked  {
+ .icon-licence .icon-checked  {
   background-color: var(--active-but);
   opacity:  1 ;
 }
@@ -782,20 +782,16 @@ fill: var(--color-but);
   fill: var(--color-but);
 }
 .aggre-licence:checked+
-.icon-item .icon-unchecked {
+.icon-licence .icon-unchecked {
 fill: var(--active-but);
 }
-.icon-item:checked .icon-unchecked{
+.icon-licence:checked .icon-unchecked{
   background-color: var(--active-but);
 }
-.icon-item:focus{
+.icon-licence:focus{
   fill: var(--active-but);
 }
-.icon-item{
-  width: 16px;
-  height: 15px;
-  outline: transparent;
-}
+
 .form-icon:focus,
 .form-icon:hover{
   border-color: var(--input-border);
