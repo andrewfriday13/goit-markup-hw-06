@@ -654,7 +654,7 @@ border: 1px solid var(--color-but);}
   position: relative;
   margin-bottom: 10px;
 }
-.label-contacts:last-child{
+.textarea-contacts{
   margin-bottom: 20px;
 }
 .input{
